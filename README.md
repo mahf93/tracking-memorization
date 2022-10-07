@@ -57,11 +57,11 @@ Therefore, our approach selects trainable models with low memorization. Observe 
 [1] Xiao et al., Learning from Massive Noisy Labeled Data for Image Classification, CVPR 2015.
 
 
-[//]: # ## Access to the paper
+[//]: # Access to the paper
 [//]: # You can find the full version of the paper (including appendices) at .
 
 
-[//]: # ## Citation
+[//]: # Citation
 [//]: # To cite our work please use:
 [//]: # ```
 [//]: # ```
