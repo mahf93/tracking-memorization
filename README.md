@@ -59,13 +59,12 @@ Therefore, our approach selects trainable models with low memorization. Observe 
 
 [//]: # "## Access to the paper"
 
-[comment]: <> You can find the full version of the paper (including appendices) at .
+[//]: # "You can find the full version of the paper (including appendices) at ."
 
+[//]: # "## Citation"
 
-[comment]: <> ## Citation
+[//]: # "To cite our work please use:"
 
-[comment]: <> To cite our work please use:
+[//]: # "```"
 
-[comment]: <> ```
-
-[comment]: <> ```
+[//]: # "```"
