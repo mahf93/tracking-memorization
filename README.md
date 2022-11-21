@@ -22,7 +22,7 @@ To train a resnet on the CIFAR-10 dataset with 50% label noise level, batch size
 ```
 python3 experiments.py --model resnet --filename <filename> --modelfilename <modelfilename>
 ```
-The model is saved in ./checkpoint/ directoty and the results are saved in ./results/ directory.
+The model is saved in ./checkpoint/ directoty and the results are saved in ./results/ directory. Running this script automatically computes susceptibility during training as well.
 
 ## A walk-through on a dataset with real-world label noise
 To illustrate how to use our method, we provide our results for the Clothing1M dataset [1], which is a real-world dataset with 1M images of clothes. The images have been labeled from the texts that accompany them, hence there are both clean and noisy labels in the set. The ground-truth of the labels is not available (i.e., we do not know which samples have clean labels and which samples have noisy labels). Therefore we cannot explicitly track memorization as measured by the accuracy on a noisy subset of the training set, but we can use susceptibility as a metric, since it does not require access to the ground-truth labels. Although the labels of the training set are not clean, a held-out test set with clean labels is available, in addition to the training set. We do not use this held-out clean set during training, but use it only to evaluate the performance of our approach based on susceptibility.
@@ -32,7 +32,7 @@ We train 19 different settings on this dataset with various architectures (ResNe
 ![My Remote Image](https://i.postimg.cc/dtgthqKt/clothing1m-fig1.png)
 *Figure 1*
 
-We divide the models of Figure 1 into 4 regions, where the boundaries are set to the mean value of the training accuracy (horizontal line) and mean value of susceptibility (vertical line): Region 1: Models that are trainable and resistant to memorization, Region 2: Trainable and but not resistant, Region 3: Not trainable but resistant and Region 4: Neither trainable nor resistant. (This is similar to Figure 5 in the paper for CIFAR-10 dataset). This is shown in Figure 2.
+We divide the models of Figure 1 into 4 regions, where the boundaries are set to the mean value of the training accuracy (horizontal line) and mean value of susceptibility (vertical line): Region 1: Models that are trainable and resistant to memorization, Region 2: Trainable and but not resistant, Region 3: Not trainable but resistant and Region 4: Neither trainable nor resistant. This is shown in Figure 2 below.
 
 ![My Remote Image](https://i.postimg.cc/CxjYdkNm/clothing1m-fig2.png)
 *Figure 2*
@@ -53,8 +53,7 @@ Region 4: 51.415% &#177; 9.709
 *Figure 3*
 
 
-Therefore, our approach selects trainable models with low memorization. Observe that selecting models only on the basis of their training accuracy or only on the basis of their susceptibility fails: both are needed.
-
+We observe that using our approach we are able to select models with a very high test accuracy. In addition, the test accuracies of models in Region 1 have the least amount of standard deviation. Note that our susceptibility metric $\zeta$ does not use any information about the label noise level or the label noise type that is present in these datasets. Random labeling is used for computing $\zeta$. Interestingly, even though within the training sets of this dataset the label noise type is different than random labeling (label noise type is instance-dependent), $\zeta$ is still successfully tracking memorization. 
 
 [1] Xiao et al., Learning from Massive Noisy Labeled Data for Image Classification, CVPR 2015.
 
