@@ -41,13 +41,13 @@ We divide the models of Figure 1 into 4 regions, where the boundaries are set to
 Our approach suggests selecting models in Region 1 (low susceptibility, high training accuracy). 
 In order to assess how our approach does in model-selection, we can reveal the test accuracy computed on a held-out clean test set in Figure 3. We observe that the average (± standard deviation) of the test accuracy of models in each region is as follows:
 
-Region 1: **61.799%** &#177; 1.643
+- Region 1: **61.799%** &#177; 1.643
 
-Region 2: 57.893% &#177; 3.562
+- Region 2: 57.893% &#177; 3.562
 
-Region 3: 51.250% &#177; 17.209
+- Region 3: 51.250% &#177; 17.209
 
-Region 4: 51.415% &#177; 9.709
+- Region 4: 51.415% &#177; 9.709
 
 ![My Remote Image](https://i.postimg.cc/HLYGxKjk/clothing1m-fig3.png)
 *Figure 3*
