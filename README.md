@@ -31,7 +31,7 @@ We train 19 different settings on this dataset with various architectures (ResNe
 
 ![My Remote Image](https://i.postimg.cc/dtgthqKt/clothing1m-fig1.png)
 
-We divide the models of Figure 1 into 4 regions, where the boundaries are set to the mean value of the training accuracy (horizontal line) and mean value of susceptibility (vertical line): Region 1: Models that are trainable and resistant to memorization, Region 2: Trainable and but not resistant, Region 3: Not trainable but resistant and Region 4: Neither trainable nor resistant. This is shown in the figure below.
+We divide the models of the above figure into 4 regions, where the boundaries are set to the mean value of the training accuracy (horizontal line) and mean value of susceptibility (vertical line): Region 1: Models that are trainable and resistant to memorization, Region 2: Trainable and but not resistant, Region 3: Not trainable but resistant and Region 4: Neither trainable nor resistant. This is shown in the figure below.
 
 ![My Remote Image](https://i.postimg.cc/CxjYdkNm/clothing1m-fig2.png)
 
