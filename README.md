@@ -53,14 +53,14 @@ In order to assess how our approach does in model-selection, we can reveal the t
 We observe that using our approach we are able to select models with a very high test accuracy. In addition, the test accuracies of models in Region 1 have the least amount of standard deviation. Note that our susceptibility metric $\zeta$ does not use any information about the label noise level or the label noise type that is present in these datasets. Random labeling is used for computing $\zeta$. Interestingly, even though within the training sets of this dataset the label noise type is different than random labeling (label noise type is instance-dependent), $\zeta$ is still successfully tracking memorization. 
 
 
-[//]: # "## Access to the paper"
+## Access to the paper
 
-[//]: # "You can find the full version of the paper (including appendices) at ."
+You can find the full version of the paper (including appendices) at https://arxiv.org/abs/2212.04461.
 
-[//]: # "## Citation"
+[//] # "## Citation"
 
-[//]: # "To cite our work please use:"
+[//] # "To cite our work please use:"
 
-[//]: # "```"
+[//] # "```"
 
-[//]: # "```"
+[//] # "```
