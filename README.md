@@ -56,3 +56,16 @@ We observe that using our approach we are able to select models with a very high
 ## Access to the paper
 
 You can find the full version of the paper (including appendices) at https://arxiv.org/abs/2212.04461.
+
+
+## Citation
+
+To cite our work please use:
+```
+@article{forouzesh2022leveraging,
+  title={Leveraging Unlabeled Data to Track Memorization},
+  author={Forouzesh, Mahsa and Sedghi, Hanie and Thiran, Patrick},
+  journal={arXiv preprint arXiv:2212.04461},
+  year={2022}
+}
+```
