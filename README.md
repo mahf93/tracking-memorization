@@ -60,12 +60,23 @@ You can find the full version of the paper (including appendices) at https://arx
 
 ## Citation
 
-To cite our work please use:
+To cite our work, for the arxiv version, use:
 ```
 @article{forouzesh2022leveraging,
   title={Leveraging Unlabeled Data to Track Memorization},
   author={Forouzesh, Mahsa and Sedghi, Hanie and Thiran, Patrick},
   journal={arXiv preprint arXiv:2212.04461},
   year={2022}
+}
+```
+and for the published version, use:
+```
+@inproceedings{
+forouzesh2023leveraging,
+title={Leveraging Unlabeled Data to Track Memorization},
+author={Mahsa Forouzesh and Hanie Sedghi and Patrick Thiran},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=ORp91sAbzI}
 }
 ```
